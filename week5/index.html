@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <style>
+        * {
+            margin: 0%;
+
+        }
+        #wrapper{
+            background-image: url("image/pexels-a-1620746-8802610.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            min-height: 100vh;
+            background-position: center;
+            backface-visibility: visible;
+        }
+        #about {
+            color: blue;
+        }
+
+        .about {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        p {
+            background-color: gray;
+            color: #aa3322;
+        }
+
+        li a {
+            color: rgb(154, 96, 96);
+        }
+        nav ul li a {
+             color:#ffbf00
+        }
+        #container > ul{
+            border: solid 3px blue;
+            background-color: rgb(233, 233, 225);
+            color: purple;
+
+        }
+
+        ul + div {
+            background-color: black;
+        }
+
+        ul ~ div {
+            background-color: black;
+        }
+
+        a:link{
+            font-size: larger;
+            color: white;
+            background-color: hsl(359, 10, 20);
+            text-decoration: none;
+            
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: green;
+        }
+
+        input:checked{
+            outline: 3px solid red;
+        }
+        tr:nth-child(odd){
+            background-color: gray;
+        }
+
+        #dogphoto{
+            background-image: url(image/img1.png);
+            height: 100px;
+            width: 100px;
+            background-position: center;
+            background-size: cover;
+            border: solid 2px blue;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>My profile page</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="#">Sample link</a>
+                <a href="##">Sample link again</a>
+            </nav>
+        </header>
+        <section style="width: 50%;">
+            <p id="about" class="about">A paragrph all about me</p>
+            <div id="container">
+                <h2>About me</h2>
+                <ul>
+                    <li>I am strong</li>
+                    <li>I am smart</li>
+                    <li>I am active</li>
+                </ul>
+                <div>
+                    <h2>My interests</h2>
+                    <ul>
+                        <li>Sport</li>
+                        <li>Music</li>
+                        <li>Coding</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>My choices</p>
+                    I like privecy
+                    <input type="checkbox" name="choices"/>
+                </div>
+                <p>some note</p>
+                <p>some content</p>
+            </div>
+            <div>
+                <h2>Dog photo</h2>
+                <div id="dogphoto">
+
+                </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>
