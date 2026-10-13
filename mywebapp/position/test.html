@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar and Sidebar Example</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            /* Prevent horizontal scrolling due to fixed elements */
+            overflow-x: hidden; 
+        }
+
+        /* Fixed Top Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        .navbar-nav a {
+            color: #fff;
+            text-decoration: none;
+            background-color: #444;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .navbar-nav a:hover {
+            background-color: #555;
+        }
+
+        /* Fixed Left Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 60px; /* Below the navbar */
+            left: 0;
+            width: 220px;
+            height: calc(100vh - 60px);
+            background-color: #333;
+            padding-top: 20px;
+            z-index: 900;
+        }
+
+        .sidebar-header {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding: 0 20px 15px 20px;
+        }
+
+        .sidebar-nav {
+            list-style: none;
+        }
+
+        .sidebar-nav li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            background-color: #444;
+            padding: 10px 20px;
+            margin: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .sidebar-nav li a:hover {
+            background-color: #555;
+        }
+
+        /* Main Content Area */
+        .content {
+            margin-top: 60px;   /* Push down below navbar */
+            margin-left: 220px;  /* Push right past sidebar */
+            padding: 40px;
+            background-color: #fff;
+            min-height: calc(100vh - 60px);
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+        #fixed-title{
+            position: fixed;
+            right: 250px;
+            top: 250px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fixed Top Navbar -->
+    <header class="navbar">
+        <div class="navbar-brand">Navigation Bar</div>
+        <ul class="navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Fixed Left Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">Side Bar</div>
+        <ul class="sidebar-nav">
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+            <li><a href="#section3">Section 3</a></li>
+            <li><a href="#section4">Section 4</a></li>
+        </ul>
+    </aside>
+
+    <!-- Scrollable Main Content -->
+    <main class="content">
+        <h1 id="fixed-title">Hello</h1>
+        <p>This is an example of a webpage with a fixed navbar and sidebar. The navbar and sidebar stays in place while the rest of the content scrolls.</p>
+        <p>Keep scrolling to see how the navbar remains fixed on the top, and the sidebar remains fixed on the left while the main content moves.</p>
+
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac felis at magna aliquam aliquet. In posuere lectus id volutpat accumsan. Phasellus suscipit nunc at nisl ultrices cursus. Praesent non consequat nunc. Suspendisse potenti. Vivamus convallis gravida augue a cursus.</p>
+        <p>Aliquam erat volutpat. Integer nec fe
+            </p>
+             <h1>Navbar and Sidebar Example</h1>
+        <p>This is an example of a webpage with a fixed navbar and sidebar. The navbar and sidebar stays in place while the rest of the content scrolls.</p>
+        <p>Keep scrolling to see how the navbar remains fixed on the top, and the sidebar remains fixed on the left while the main content moves.</p>
+
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac felis at magna aliquam aliquet. In posuere lectus id volutpat accumsan. Phasellus suscipit nunc at nisl ultrices cursus. Praesent non consequat nunc. Suspendisse potenti. Vivamus convallis gravida augue a cursus.</p>
+        <p>Aliquam erat volutpat. Integer nec fe
+            </p>
+             <h1>Navbar and Sidebar Example</h1>
+        <p>This is an example of a webpage with a fixed navbar and sidebar. The navbar and sidebar stays in place while the rest of the content scrolls.</p>
+        <p>Keep scrolling to see how the navbar remains fixed on the top, and the sidebar remains fixed on the left while the main content moves.</p>
+
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac felis at magna aliquam aliquet. In posuere lectus id volutpat accumsan. Phasellus suscipit nunc at nisl ultrices cursus. Praesent non consequat nunc. Suspendisse potenti. Vivamus convallis gravida augue a cursus.</p>
+        <p>Aliquam erat volutpat. Integer nec fe
+            </p>
+             <h1>Navbar and Sidebar Example</h1>
+        <p>This is an example of a webpage with a fixed navbar and sidebar. The navbar and sidebar stays in place while the rest of the content scrolls.</p>
+        <p>Keep scrolling to see how the navbar remains fixed on the top, and the sidebar remains fixed on the left while the main content moves.</p>
+
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac felis at magna aliquam aliquet. In posuere lectus id volutpat accumsan. Phasellus suscipit nunc at nisl ultrices cursus. Praesent non consequat nunc. Suspendisse potenti. Vivamus convallis gravida augue a cursus.</p>
+        <p>Aliquam erat volutpat. Integer nec fe
+            </p>
+    </main>
+</body>
+</html>

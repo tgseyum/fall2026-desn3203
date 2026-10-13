@@ -1,0 +1,79 @@
+:root {                   /* CSS stylesheet */
+  --unit: calc(100vh / 21);
+  --unit1: calc(var(--unit) - 16px);
+  --unit2: calc(var(--unit) * 2 - 16px);
+  --unit3: calc(var(--unit) * 3 - 16px);
+  --unit5: calc(var(--unit) * 5 - 16px);
+  --unit8: calc(var(--unit) * 8 - 16px);
+  --unit13: calc(var(--unit) * 13 - 16px);
+  --unit21: calc(var(--unit) * 21 - 16px);
+}
+body {
+  background: lightgray;
+  width: 100vw;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: inline-block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  border: 2px solid red;
+  background-color: green;
+}
+.div21 {
+    background-color:green;
+     font-size: 10vw;
+     height: var(--unit21);
+     width: var(--unit21);
+
+}
+.div13 {
+    background-color: pink;
+        font-size: 8vw;
+        position: absolute;
+        height: var(--unit13);
+        width: var(--unit13);
+        left: 135px;
+        z-index: 3;
+
+}
+.div3 {
+    background-color: yellow;
+    position: absolute;
+    height: var(--unit3);
+    width: var(--unit3);
+    left: 136px;
+    top:var(--unit13);
+}
+.div2 {
+    background-color: orange;
+    height: var(--unit2);
+    width: var(--unit2);
+}
+.div8 {
+    background-color: lightgreen;
+    height: var(--unit8);
+    width: var(--unit8);
+}
+.div1 {
+    background-color: purple;
+    height: var(--unit1);
+    width: var(--unit1);
+}
+.div11 {
+    background-color: black;
+    display: none;
+    
+}
+.div5 {
+    background-color: limegreen;
+    width: var(--unit5);
+    height: var(--unit5);
+}
